@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="simple.js">
+
+        function start() 
+        
+        {
+    
+            var currentX = 0;
+            while(currentX <= 400)
+            {
+                line(0, 0, currentX, 200, 1, "black");
+                
+                line(400, 200, currentX, 0, 1, "black");
+                line(0, 200, currentX, 0,1, "black");
+                line(400, 0, currentX,200, 1, "black");
+                currentX += 10;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
